@@ -1,0 +1,61 @@
+<!--META {"title": "Oportunidades", "description": "Editais, financiamento, parcerias, mentorias, eventos, desafios e internacionalização no ecossistema de inovação da UFMG."} -->
+
+<section class="page-hero" aria-labelledby="op-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li aria-current="page">Oportunidades</li></ol>
+    <p class="eyebrow">Oportunidades</p>
+    <h1 id="op-title">Editais, parcerias, mentorias e desafios.</h1>
+    <p class="lead">Oportunidades abertas, periódicas e previstas no plano de trabalho do CEI. Registre interesse e a equipe responsável entra em contato quando houver novidade.</p>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0" aria-label="Lista de oportunidades">
+  <div class="container" data-filter-scope>
+    <div class="filter-bar">
+      <div class="search-input">{{icon:search}}<label for="op-search" class="visually-hidden">Buscar oportunidades</label><input id="op-search" class="input" type="search" placeholder="Buscar oportunidades…" data-filter-search></div>
+      <div class="cluster" data-filter-group="cat" role="group" aria-label="Filtrar por categoria">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">Todas <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="editais" aria-pressed="false">Editais <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="financiamento" aria-pressed="false">Financiamento <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="parcerias" aria-pressed="false">Parcerias <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="mentorias" aria-pressed="false">Mentorias <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="eventos" aria-pressed="false">Eventos <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="desafios" aria-pressed="false">Desafios <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="internacionalizacao" aria-pressed="false">Internacionalização <span class="count"></span></button>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center">
+        <p class="result-count" data-filter-count aria-live="polite" style="margin:0"></p>
+        <div class="cluster small muted"><span class="badge badge-dot badge-teal">Aberto / periódico</span><span class="badge badge-dot badge-gold">Previsto / em estruturação</span></div>
+      </div>
+    </div>
+    <div class="grid grid-3">
+{{cards:oportunidades}}
+    </div>
+    <div class="empty-state" data-filter-empty>
+      <h3>Nenhuma oportunidade com esses filtros.</h3>
+      <p>Ajuste a busca ou receba alertas quando surgirem novas oportunidades.</p>
+      <div class="cluster" style="justify-content:center;margin-top:16px"><button type="button" class="btn" data-filter-clear>Limpar filtros</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-surface" aria-labelledby="al-title">
+  <div class="container split is-even">
+    <div>
+      <p class="eyebrow">Alertas</p>
+      <h2 id="al-title">Receba novas oportunidades por e-mail.</h2>
+      <p class="lead" style="margin-top:16px">Escolha os temas que interessam a você. A curadoria é feita pela equipe do CEI.</p>
+    </div>
+    <div>
+      <form data-form class="form-grid cols-2">
+        <div class="field"><label for="al-nome">Nome</label><input class="input" id="al-nome" name="nome" autocomplete="name" required><span class="field-error" role="alert"></span></div>
+        <div class="field"><label for="al-email">E-mail</label><input class="input" id="al-email" name="email" type="email" inputmode="email" autocomplete="email" required><span class="field-error" role="alert"></span></div>
+        <div class="field span-2"><label for="al-tema">Tema principal</label><select class="select" id="al-tema" name="tema" required><option value="">Selecione</option><option>Editais</option><option>Financiamento</option><option>Parcerias</option><option>Mentorias</option><option>Eventos</option><option>Desafios</option><option>Internacionalização</option><option>Todos os temas</option></select><span class="field-error" role="alert"></span></div>
+        <div class="field span-2"><label class="check"><input type="checkbox" required data-msg-required="É necessário consentir para receber alertas."> <span>Aceito receber comunicações do CEI/UFMG e sei que posso cancelar a qualquer momento (LGPD).</span></label><span class="field-error" role="alert"></span></div>
+        <div class="span-2"><button type="submit" class="btn btn-dark">Quero receber alertas {{icon:bell:icon-sm}}</button></div>
+      </form>
+      <div class="form-status" role="status">{{icon:check}}<div><h4>Inscrição registrada</h4><p>Versão demonstrativa: nenhum dado foi enviado. Com a integração ativa, você receberá a confirmação por e-mail.</p><button type="button" class="btn btn-sm" style="margin-top:12px" data-form-reset>Nova inscrição</button></div></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<!--META {"title": "Contato", "description": "Fale com o CEI/UFMG. Antes de procurar um departamento, conte ao CEI o que você está tentando realizar."} -->
+
+<section class="page-hero" aria-labelledby="ct-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li aria-current="page">Contato</li></ol>
+    <p class="eyebrow">Contato</p>
+    <h1 id="ct-title">Antes de procurar um departamento, conte ao CEI o que você está tentando realizar.</h1>
+    <div class="cluster" style="margin-top:28px"><button type="button" class="btn btn-primary btn-lg" data-agent-open>Fale com o Agente CEI {{icon:arrow-right:icon-arrow}}</button><a class="btn btn-lg" href="#formulario">Prefiro o formulário</a></div>
+  </div>
+</section>
+
+<section class="section-tight" id="formulario" style="padding-top:0" aria-labelledby="fm-title">
+  <div class="container split">
+    <div class="stack-lg">
+      <div>
+        <h2 id="fm-title" style="font-size:clamp(1.5rem,1.2rem + 1.2vw,2.2rem)">Canais</h2>
+      </div>
+      <ul class="check-list" style="gap:22px">
+        <li>{{icon:pin}}<span><strong>Endereço</strong><br>Prédio do CPDEE/INOVA · Escola de Engenharia<br>Campus Pampulha · UFMG<br>Av. Antônio Carlos, 6627 · Belo Horizonte, MG · CEP 31270-901<br><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Escola+de+Engenharia+UFMG+Pampulha" target="_blank" rel="noopener">Abrir no mapa</a></span></li>
+        <li>{{icon:mail}}<span><strong>E-mail</strong><br><span class="placeholder-note">[E-MAIL INSTITUCIONAL A INSERIR]</span></span></li>
+        <li>{{icon:message}}<span><strong>Redes sociais</strong><br><span class="muted">Perfis oficiais em breve.</span> <span class="placeholder-note">[LINKS A INSERIR]</span></span></li>
+        <li>{{icon:link}}<span><strong>Links institucionais</strong><br>
+          <a class="text-link" href="https://ufmg.br" target="_blank" rel="noopener">UFMG</a> ·
+          <a class="text-link" href="https://www.eng.ufmg.br" target="_blank" rel="noopener">Escola de Engenharia</a> ·
+          <a class="text-link" href="https://ctit.ufmg.br" target="_blank" rel="noopener">CTIT/INOVA</a> ·
+          <a class="text-link" href="https://fapemig.br" target="_blank" rel="noopener">FAPEMIG</a></span></li>
+      </ul>
+    </div>
+    <div class="panel-light">
+      <form data-form class="form-grid cols-2" aria-label="Formulário de contato">
+        <div class="field"><label for="c-nome">Nome</label><input class="input" id="c-nome" name="nome" autocomplete="name" required><span class="field-error" role="alert"></span></div>
+        <div class="field"><label for="c-email">E-mail</label><input class="input" id="c-email" name="email" type="email" inputmode="email" autocomplete="email" required><span class="field-error" role="alert"></span></div>
+        <div class="field"><label for="c-vinc">Você é</label><select class="select" id="c-vinc" name="vinculo" required><option value="">Selecione</option><option>Estudante</option><option>Pesquisador(a) / Docente</option><option>Servidor(a)</option><option>Empresa</option><option>Startup / Spin-off</option><option>Investidor(a)</option><option>Governo / Setor público</option><option>Imprensa</option><option>Sociedade / Outro</option></select><span class="field-error" role="alert"></span></div>
+        <div class="field"><label for="c-org">Organização <span class="muted">(opcional)</span></label><input class="input" id="c-org" name="organizacao" autocomplete="organization"></div>
+        <div class="field span-2"><label for="c-msg">O que você está tentando realizar?</label><textarea class="textarea" id="c-msg" name="mensagem" minlength="20" required placeholder="Conte o contexto, o que você já tem e o que gostaria de alcançar."></textarea><span class="hint">Mínimo de 20 caracteres.</span><span class="field-error" role="alert"></span></div>
+        <div class="field span-2"><label class="check"><input type="checkbox" required data-msg-required="É necessário consentir para enviar."> <span>Autorizo o uso destas informações para resposta e encaminhamento da minha mensagem, nos termos da LGPD.</span></label><span class="field-error" role="alert"></span></div>
+        <div class="span-2"><button type="submit" class="btn btn-dark btn-lg">Enviar mensagem {{icon:arrow-right:icon-arrow}}</button></div>
+      </form>
+      <div class="form-status" role="status">{{icon:check}}<div><h4>Mensagem registrada</h4><p>Versão demonstrativa: nenhum dado foi enviado. Com a integração ativa, a equipe do CEI responderá pelo e-mail informado.</p><button type="button" class="btn btn-sm" style="margin-top:12px" data-form-reset>Enviar outra mensagem</button></div></div>
+    </div>
+  </div>
+</section>

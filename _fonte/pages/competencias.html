@@ -1,0 +1,52 @@
+<!--META {"title": "Competências UFMG", "description": "Encontre conhecimento, pessoas e capacidades dentro da UFMG: áreas, tecnologias, competências, laboratórios, pesquisadores e infraestrutura."} -->
+
+<section class="page-hero" aria-labelledby="cp-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li><a href="{{P}}ecossistema/">Ecossistema</a></li><li aria-current="page">Competências</li></ol>
+    <p class="eyebrow">Competências UFMG</p>
+    <h1 id="cp-title">Encontre conhecimento, pessoas e capacidades dentro da UFMG.</h1>
+    <p class="lead">Um mapa vivo da universidade: cruze problema × tecnologia × competências × laboratórios × infraestrutura para encontrar quem pode ajudar.</p>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0" aria-label="Busca de competências">
+  <div class="container" data-filter-scope>
+    <div class="notice" style="margin-bottom:24px">{{icon:info}}<span><strong>Base inicial.</strong> Os registros abaixo foram extraídos do projeto de implantação do CEI. O mapeamento completo das competências da UFMG é uma meta em execução (Meta 1.1) e substituirá esta base quando concluído.</span></div>
+    <div class="filter-bar">
+      <div class="search-input">{{icon:search}}<label for="cp-search" class="visually-hidden">Buscar competências</label><input id="cp-search" class="input" type="search" placeholder="Ex.: inteligência artificial, saúde, nanotecnologia, prototipagem…" data-filter-search></div>
+      <div class="cluster" data-filter-group="tipo" role="group" aria-label="Filtrar por tipo">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">Tudo <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="area" aria-pressed="false">Área <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="tecnologia" aria-pressed="false">Tecnologia <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="competencia" aria-pressed="false">Competência <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="laboratorio" aria-pressed="false">Laboratório <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="pesquisador" aria-pressed="false">Pesquisadores <span class="count"></span></button>
+        <button type="button" class="chip" data-filter="infraestrutura" aria-pressed="false">Infraestrutura <span class="count"></span></button>
+      </div>
+      <p class="result-count" data-filter-count aria-live="polite"></p>
+    </div>
+    <div class="grid grid-3">
+{{cards:competencias}}
+    </div>
+    <div class="empty-state" data-filter-empty>
+      <h3>Nada encontrado nesta base inicial.</h3>
+      <p>Descreva seu problema ao Agente CEI — a equipe do UFMG Hub pode localizar grupos aderentes.</p>
+      <div class="cluster" style="justify-content:center;margin-top:16px"><button type="button" class="btn" data-filter-clear>Limpar busca</button><button type="button" class="btn btn-primary" data-agent-open data-agent-prompt="Preciso encontrar uma competência dentro da UFMG para o seguinte problema: ">Perguntar ao Agente</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" aria-labelledby="cp-how">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Como a busca vai evoluir</p>
+      <h2 id="cp-how">Do catálogo à inteligência combinatória.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><span class="card-num">01</span><h3>Mapeamento</h3><p>Levantamento das competências da UFMG para arranjos de inovação: infraestrutura, capital intelectual e tecnologia (Meta 1.1).</p></div>
+      <div class="card reveal" data-delay="1"><span class="card-num">02</span><h3>Plataforma do Hub</h3><p>Plataforma online no UFMG Hub para divulgação contínua das competências dos grupos de pesquisa a parceiros externos (Meta 10.5).</p></div>
+      <div class="card reveal" data-delay="2"><span class="card-num">03</span><h3>Agente CEI</h3><p>O Agente cruza o problema com competências, laboratórios, empresas e editais — e a equipe decide o encaminhamento.</p></div>
+    </div>
+  </div>
+</section>

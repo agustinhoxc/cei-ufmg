@@ -1,0 +1,139 @@
+<!--META {"title": "Ecossistema", "description": "Mapa interativo do ecossistema de inovação da UFMG: pesquisadores, estudantes, empreendedores, laboratórios, empresas, investidores, governo, sociedade, CTIT/INOVA, unidades acadêmicas e programas."} -->
+
+<section class="page-hero" aria-labelledby="ec-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li aria-current="page">Ecossistema</li></ol>
+    <p class="eyebrow">Ecossistema</p>
+    <h1 id="ec-title">Quem faz o quê no ecossistema de inovação da UFMG.</h1>
+    <p class="lead">O CEI articula atores que produzem conhecimento, demandam soluções, oferecem capital e recebem impacto. O Agente CEI é o mecanismo de conexão entre eles.</p>
+    <nav class="subnav" aria-label="Seções do ecossistema">
+      <a href="#mapa">Atores</a><a href="{{P}}competencias/">Competências</a><a href="{{P}}infraestrutura/">Infraestrutura</a><a href="#parcerias">Parcerias</a><a href="{{P}}internacionalizacao/">Internacionalização</a>
+    </nav>
+  </div>
+</section>
+
+<section class="section-tight" id="mapa" style="padding-top:0" aria-labelledby="map-title">
+  <div class="container">
+    <h2 id="map-title" class="visually-hidden">Mapa interativo de atores</h2>
+    <div class="network-wrap network-light" data-network data-light>
+      <script type="application/json">
+      {"label":"Mapa interativo do ecossistema de inovação da UFMG",
+       "nodes":[
+        {"id":"cei","label":"CEI","center":true,"x":300,"y":300,"title":"CEI/UFMG","kicker":"Articulador","role":"Articula e desenvolve o ecossistema.","desc":"Ponto de convergência institucional com gestão compartilhada entre a Escola de Engenharia e a CTIT/UFMG. O Agente CEI conecta os atores por meio de diagnóstico e encaminhamento."},
+        {"id":"pesquisador","label":"Pesquisador","x":300,"y":78,"title":"Pesquisador","kicker":"Pessoas","role":"Gera conhecimento.","desc":"Docentes e pesquisadores cujas pesquisas podem originar tecnologias, spin-offs e parcerias com o setor produtivo.","href":"competencias/?tipo=pesquisador","hrefLabel":"Buscar pesquisadores"},
+        {"id":"estudante","label":"Estudante","x":420,"y":113,"title":"Estudante","kicker":"Pessoas","role":"Desenvolve competências e projetos.","desc":"Graduação e pós-graduação: disciplinas como a OPEI, empresas juniores, projetos de extensão, INDERIOS e PPGIT.","href":"programas/?publico=estudantes","hrefLabel":"Programas para estudantes"},
+        {"id":"empreendedor","label":"Empreendedor","x":502,"y":208,"title":"Empreendedor","kicker":"Pessoas","role":"Transforma oportunidade em empreendimento.","desc":"Fundadores de startups e spin-offs apoiados pelo InovaLab, pela INOVA-UFMG e pelo Motirõ.","href":"programas/?cat=empreendedorismo","hrefLabel":"Programas de empreendedorismo"},
+        {"id":"empresa","label":"Empresa","x":520,"y":332,"title":"Empresa","kicker":"Conexões","role":"Demanda, valida e absorve tecnologia.","desc":"Empresas encontram competências e talentos via UFMG Hub, ELO e Mercado em Conexão, e formalizam acordos de PD&I com apoio da CTIT.","href":"oportunidades/?cat=parcerias","hrefLabel":"Oportunidades de parceria"},
+        {"id":"investidor","label":"Investidor","x":468,"y":445,"title":"Investidor","kicker":"Conexões","role":"Disponibiliza capital.","desc":"Fundos de investimento, investidores-anjo e parceiros como a FUNDEPAR apoiam startups oriundas da UFMG.","href":"oportunidades/?cat=financiamento","hrefLabel":"Financiamento"},
+        {"id":"governo","label":"Governo","x":363,"y":513,"title":"Governo","kicker":"Conexões","role":"Formula políticas e instrumentos.","desc":"Governo de Minas Gerais, FAPEMIG e SEDE: fomento, equipamentos e políticas para o ecossistema mineiro de inovação.","href":"transparencia/","hrefLabel":"Fomento e transparência"},
+        {"id":"sociedade","label":"Sociedade","x":237,"y":513,"title":"Sociedade","kicker":"Impacto","role":"Gera demanda e recebe impacto.","desc":"Negócios de impacto social e ambiental, tecnologias sociais e inovação na gestão pública levam soluções para a sociedade.","href":"programas/#programa-motiro","hrefLabel":"Negócios de impacto"},
+        {"id":"programas","label":"Programas","x":132,"y":445,"title":"Programas","kicker":"Conhecimento","role":"Estruturam trilhas e formatos.","desc":"InovaLab, INDERIOS, OPEI, UFMG Hub, Mercado em Conexão, ENG200, Motirõ, LAPLANGE e outras iniciativas integradas ao CEI.","href":"programas/","hrefLabel":"Ver programas"},
+        {"id":"unidades","label":"Unidades","x":80,"y":332,"title":"Unidades acadêmicas","kicker":"Conhecimento","role":"Abrigam ensino, pesquisa e extensão.","desc":"Escola de Engenharia, Escola de Enfermagem, ICB, DCC, Ciências Administrativas e demais unidades conectadas ao CEI.","href":"#ambientes","hrefLabel":"Outros ambientes"},
+        {"id":"ctit","label":"CTIT/INOVA","x":98,"y":208,"title":"CTIT/INOVA","kicker":"Conhecimento","role":"Apoia propriedade intelectual, transferência e inovação.","desc":"O NIT da UFMG e a incubadora INOVA-UFMG — pilares centrais do CEI, com o InovaLab.","href":"programas/#programa-ctit","hrefLabel":"Sobre a CTIT"},
+        {"id":"laboratorio","label":"Laboratório","x":180,"y":113,"title":"Laboratório","kicker":"Conhecimento","role":"Disponibiliza infraestrutura e competência.","desc":"Laboratórios de pesquisa e o Espaço Maker do CEI para prototipagem e validação.","href":"competencias/?tipo=laboratorio","hrefLabel":"Buscar laboratórios"}
+       ],
+       "edges":[["cei","pesquisador"],["cei","estudante"],["cei","empreendedor"],["cei","empresa"],["cei","investidor"],["cei","governo"],["cei","sociedade"],["cei","programas"],["cei","unidades"],["cei","ctit"],["cei","laboratorio"],
+        ["pesquisador","laboratorio"],["pesquisador","ctit"],["pesquisador","estudante"],["estudante","programas"],["estudante","empreendedor"],["empreendedor","investidor"],["empreendedor","ctit"],["empresa","pesquisador"],["empresa","investidor"],["empresa","sociedade"],["governo","sociedade"],["governo","investidor"],["unidades","laboratorio"],["unidades","programas"],["programas","empreendedor"]]
+      }
+      </script>
+      <div class="network" aria-describedby="eco-hint"></div>
+      <div>
+        <div class="panel-light" data-network-panel aria-live="polite"></div>
+        <p class="net-hint" id="eco-hint" style="color:var(--text-3)">{{icon:info:icon-sm}} Selecione um ator para ver papel e conexões.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-surface" aria-labelledby="at-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Atores</p>
+      <h2 id="at-title">Papéis no ecossistema.</h2>
+      <p>Cada ator tem uma função específica. O CEI torna visível quem faz o quê — e como essas funções se combinam.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card actor-card reveal" id="ator-pesquisador"><span class="card-icon">{{icon:flask}}</span><span class="role">Gera conhecimento</span><h3>Pesquisadores</h3><p>Matéria-prima das spin-offs acadêmicas e dos arranjos de inovação.</p><p class="small"><strong>Conecta com:</strong> laboratórios, CTIT, estudantes, empresas.</p><a class="link-arrow" href="{{P}}competencias/?tipo=pesquisador"><span>Buscar competências</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="1" id="ator-estudante"><span class="card-icon">{{icon:graduation}}</span><span class="role">Desenvolve competências e projetos</span><h3>Estudantes</h3><p>Protagonistas de empresas juniores, extensão, disciplinas e consultorias.</p><p class="small"><strong>Conecta com:</strong> programas, pesquisadores, empreendedores.</p><a class="link-arrow" href="{{P}}programas/?publico=estudantes"><span>Programas para estudantes</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="2" id="ator-empreendedor"><span class="card-icon">{{icon:trending}}</span><span class="role">Transforma oportunidade em empreendimento</span><h3>Empreendedores</h3><p>Fundadores de startups, spin-offs e negócios de impacto.</p><p class="small"><strong>Conecta com:</strong> investidores, CTIT, programas.</p><a class="link-arrow" href="{{P}}programas/?cat=empreendedorismo"><span>Trilhas de empreendedorismo</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" id="ator-laboratorio"><span class="card-icon">{{icon:wrench}}</span><span class="role">Infraestrutura e competência</span><h3>Laboratórios</h3><p>Pesquisa, prototipagem e validação — incluindo o Espaço Maker do CEI.</p><p class="small"><strong>Conecta com:</strong> pesquisadores, unidades acadêmicas.</p><a class="link-arrow" href="{{P}}infraestrutura/"><span>Infraestrutura</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="1" id="ator-ctit"><span class="card-icon">{{icon:key}}</span><span class="role">PI, transferência e inovação</span><h3>CTIT/INOVA</h3><p>Núcleo de Inovação Tecnológica e incubadora da UFMG — pilares centrais do CEI.</p><p class="small"><strong>Conecta com:</strong> pesquisadores, empreendedores, empresas.</p><a class="link-arrow" href="{{P}}programas/#programa-ctit"><span>Sobre a CTIT</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="2" id="ator-empresa"><span class="card-icon">{{icon:building}}</span><span class="role">Demanda, valida e absorve tecnologia</span><h3>Empresas</h3><p>Trazem problemas reais, validam soluções e absorvem tecnologia por meio de parcerias.</p><p class="small"><strong>Conecta com:</strong> pesquisadores, investidores, sociedade.</p><a class="link-arrow" href="{{P}}oportunidades/?cat=parcerias"><span>Parcerias</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" id="ator-investidor"><span class="card-icon">{{icon:coins}}</span><span class="role">Disponibiliza capital</span><h3>Investidores</h3><p>Fundos, investidores-anjo e fundações que apoiam a escala de negócios.</p><p class="small"><strong>Conecta com:</strong> empreendedores, empresas, governo.</p><a class="link-arrow" href="{{P}}oportunidades/?cat=financiamento"><span>Financiamento</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="1" id="ator-governo"><span class="card-icon">{{icon:landmark}}</span><span class="role">Formula políticas e instrumentos</span><h3>Governo</h3><p>Fomento, compras públicas, políticas e parcerias com o setor público.</p><p class="small"><strong>Conecta com:</strong> sociedade, investidores, CEI.</p><a class="link-arrow" href="{{P}}transparencia/"><span>Fomento</span>{{icon:arrow-right}}</a></article>
+      <article class="card actor-card reveal" data-delay="2" id="ator-sociedade"><span class="card-icon">{{icon:heart}}</span><span class="role">Gera demanda e recebe impacto</span><h3>Sociedade</h3><p>A razão de ser da inovação universitária: soluções que beneficiem pessoas.</p><p class="small"><strong>Conecta com:</strong> governo, empresas, negócios de impacto.</p><a class="link-arrow" href="{{P}}programas/#programa-motiro"><span>Negócios de impacto</span>{{icon:arrow-right}}</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="dm-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Domínios</p>
+      <h2 id="dm-title">A arquitetura dos domínios do CEI.</h2>
+      <p>O Agente CEI funciona como uma camada de inteligência sobre os domínios do CEI, organizados em grandes blocos.</p>
+    </div>
+    <div class="grid grid-3" style="row-gap:40px">
+      <div class="domain-block reveal"><span class="letter">A</span><h3>Pessoas e trajetória</h3><ul><li>Empreendedor</li><li>Pesquisador</li><li>Estudante</li><li>Empresa</li><li>Investidor</li><li>Mentor</li><li>Especialista</li></ul></div>
+      <div class="domain-block reveal" data-delay="1"><span class="letter">B</span><h3>Conhecimento e tecnologia</h3><ul><li>Pesquisa</li><li>Tecnologia</li><li>Propriedade intelectual</li><li>Infraestrutura</li><li>Competências</li></ul></div>
+      <div class="domain-block reveal" data-delay="2"><span class="letter">C</span><h3>Empreendedorismo e mercado</h3><ul><li>Modelo de negócio</li><li>Mercado</li><li>Clientes</li><li>Produto</li><li>Validação</li></ul></div>
+      <div class="domain-block reveal"><span class="letter">D</span><h3>Capital e desenvolvimento</h3><ul><li>Financiamento</li><li>Investimento</li><li>Editais</li><li>Parcerias</li><li>Internacionalização</li></ul></div>
+      <div class="domain-block reveal" data-delay="1"><span class="letter">E</span><h3>Impacto e governança</h3><ul><li>Sustentabilidade</li><li>Impacto socioambiental</li><li>Integridade</li><li>Indicadores</li><li>Governança</li></ul></div>
+      <div class="reveal" data-delay="2" style="align-self:start"><div class="notice">{{icon:info}}<span>O número exato dos 13 domínios permanece aquele consolidado metodologicamente pela equipe do CEI; aqui está representada a lógica arquitetônica.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sand" aria-labelledby="ei-title">
+  <div class="container split">
+    <div class="sticky-col">
+      <p class="eyebrow">Estrutura institucional</p>
+      <h2 id="ei-title">A tríplice hélice, materializada.</h2>
+      <p class="lead" style="margin-top:16px">Da universidade à sociedade, cada camada tem papel definido e conexão com o CEI.</p>
+    </div>
+    <ol class="chain">
+      <li class="is-agent"><span class="ci">01</span><div><strong>UFMG</strong><span>Universidade Federal de Minas Gerais</span></div></li>
+      <li class="is-human"><span class="ci">02</span><div><strong>CEI</strong><span>Centro de Empreendedorismo e Inovação</span></div></li>
+      <li><span class="ci">03</span><div><strong>Unidades acadêmicas</strong><span>Escola de Engenharia, Enfermagem, ICB, DCC e outras</span></div></li>
+      <li><span class="ci">04</span><div><strong>CTIT / INOVA</strong><span>Propriedade intelectual, transferência e incubação</span></div></li>
+      <li><span class="ci">05</span><div><strong>Laboratórios</strong><span>Infraestrutura e competência</span></div></li>
+      <li><span class="ci">06</span><div><strong>Programas</strong><span>Trilhas de formação, incubação e conexão</span></div></li>
+      <li><span class="ci">07</span><div><strong>Empresas</strong><span>Demanda e absorção de tecnologia</span></div></li>
+      <li><span class="ci">08</span><div><strong>Investidores</strong><span>Capital</span></div></li>
+      <li><span class="ci">09</span><div><strong>Governo</strong><span>Políticas e instrumentos</span></div></li>
+      <li><span class="ci">10</span><div><strong>Sociedade</strong><span>Demanda e impacto</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="parcerias" aria-labelledby="pc-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Parcerias estratégicas</p>
+      <h2 id="pc-title">Parceiros que ampliam as fronteiras do CEI.</h2>
+      <p>A combinação de competências técnico-científicas da UFMG com a expertise de instituições parceiras cria um ambiente propício para soluções competitivas e de alto impacto.</p>
+    </div>
+    <div class="grid grid-2">
+      <article class="card reveal"><div class="card-meta"><span class="badge badge-gold">Nanotecnologia</span></div><h3>Merck S.A.</h3><p>Convênio para o Hub de Inovação em Nanotecnologia: prospecção de mercado na América Latina (Brasil, Argentina, Chile e México), POPs de produção e qualidade, estudos de estabilidade, lotes-piloto com CMOs para validação em TRL &gt; 6, ISO 9001 e normas REACH em spin-offs.</p></article>
+      <article class="card reveal" data-delay="1"><div class="card-meta"><span class="badge badge-gold">Parque tecnológico</span></div><h3>BH-TEC — Parque Tecnológico de Belo Horizonte</h3><p>Apoio ao InovaLab e ao ambiente de inovação do campus: infraestrutura do Escalab, modelagem de negócios de startups incubadas, aproximação com o setor produtivo local e apoio a eventos e missões.</p></article>
+      <article class="card reveal"><div class="card-meta"><span class="badge badge-gold">Fomento a startups</span></div><h3>FUNDEPAR — Fundação de Desenvolvimento da Pesquisa</h3><p>Aceleração e fomento de startups da UFMG, com atenção a negócios de impacto social e ambiental: apoio financeiro e técnico, mentorias, interlocução com fundos e investidores-anjo e política de investimentos.</p></article>
+      <article class="card reveal" data-delay="1"><div class="card-meta"><span class="badge badge-gold">Biotecnologia</span></div><h3>Biominas Brasil</h3><p>Aliança para um Hub de Biotecnologia na UFMG: metodologia de incubação para negócios biotecnológicos, capacitação e mentoria em saúde e ciências da vida, parcerias com empresas do setor e estratégias de go-to-market.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-surface" id="ambientes" aria-labelledby="am-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Outros ambientes</p>
+      <h2 id="am-title">Onde o ecossistema acontece.</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="kpi reveal"><h3>Campus Pampulha</h3><p class="kpi-label">Sede do CEI no prédio do CPDEE/INOVA, junto à Escola de Engenharia.</p></div>
+      <div class="kpi reveal" data-delay="1"><h3>Campus Saúde</h3><p class="kpi-label">Núcleo do CEI via LAPLANGE e oferta da OPEI para cursos da saúde.</p></div>
+      <div class="kpi reveal" data-delay="2"><h3>BH-TEC</h3><p class="kpi-label">Parque Tecnológico de Belo Horizonte, parceiro do InovaLab.</p></div>
+      <div class="kpi reveal" data-delay="3"><h3>Unidade Embrapii DCC</h3><p class="kpi-label">Sistemas ciberfísicos, no Departamento de Ciência da Computação.</p></div>
+    </div>
+  </div>
+</section>

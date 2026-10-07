@@ -1,0 +1,65 @@
+<!--META {"title": "Programas", "description": "Programas e iniciativas integradas ao CEI/UFMG: InovaLab, INOVA-UFMG, CTIT, FabLab, INDERIOS, OPEI, UFMG Hub, ELO, Mercado em Conexão, Motirõ, LAPLANGE e mais."} -->
+
+<section class="page-hero" aria-labelledby="pg-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li aria-current="page">Programas</li></ol>
+    <p class="eyebrow">Programas e iniciativas</p>
+    <h1 id="pg-title">O que já existe na UFMG, agora conectado.</h1>
+    <p class="lead">O CEI não substitui as iniciativas existentes: integra e potencializa. Filtre por categoria ou público e encontre a porta de entrada mais adequada ao seu momento.</p>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0" aria-label="Catálogo de programas">
+  <div class="container" data-filter-scope>
+    <div class="filter-bar">
+      <div class="search-input">{{icon:search}}<label for="pg-search" class="visually-hidden">Buscar programas</label><input id="pg-search" class="input" type="search" placeholder="Buscar por nome, tema ou público…" data-filter-search></div>
+      <div>
+        <p class="mono small muted" style="margin:0 0 8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase">Categoria</p>
+        <div class="cluster" data-filter-group="cat" role="group" aria-label="Filtrar por categoria">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">Todas <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="empreendedorismo" aria-pressed="false">Empreendedorismo <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="inovacao" aria-pressed="false">Inovação <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="pesquisa" aria-pressed="false">Pesquisa <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="desenvolvimento" aria-pressed="false">Desenvolvimento tecnológico <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="capacitacao" aria-pressed="false">Capacitação <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="conexao" aria-pressed="false">Universidade–empresa <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="internacionalizacao" aria-pressed="false">Internacionalização <span class="count"></span></button>
+        </div>
+      </div>
+      <div>
+        <p class="mono small muted" style="margin:0 0 8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase">Público</p>
+        <div class="cluster" data-filter-group="publico" role="group" aria-label="Filtrar por público">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">Todos <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="estudantes" aria-pressed="false">Estudantes <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="pesquisadores" aria-pressed="false">Pesquisadores <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="empreendedores" aria-pressed="false">Empreendedores <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="empresas" aria-pressed="false">Empresas <span class="count"></span></button>
+          <button type="button" class="chip" data-filter="setor-publico" aria-pressed="false">Setor público <span class="count"></span></button>
+        </div>
+      </div>
+      <p class="result-count" data-filter-count aria-live="polite"></p>
+    </div>
+    <div class="grid grid-3">
+{{cards:programas}}
+    </div>
+    <div class="empty-state" data-filter-empty>
+      <h3>Nenhum programa com esses filtros.</h3>
+      <p>Tente outra combinação — ou conte ao Agente CEI o que você procura.</p>
+      <div class="cluster" style="justify-content:center;margin-top:16px"><button type="button" class="btn" data-filter-clear>Limpar filtros</button><button type="button" class="btn btn-primary" data-agent-open>Fale com o CEI</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" aria-labelledby="pg-cta">
+  <div class="container split is-even">
+    <div>
+      <p class="eyebrow">Não sabe por onde começar?</p>
+      <h2 id="pg-cta">Você não precisa escolher o programa. Conte o que está tentando realizar.</h2>
+    </div>
+    <div class="stack">
+      <p class="lead" style="color:var(--on-dark-2)">O Agente CEI organiza seu contexto e sugere as iniciativas mais aderentes. A equipe do CEI avalia e faz o encaminhamento.</p>
+      <div class="cluster"><button type="button" class="btn btn-primary btn-lg" data-agent-open>Fale com o CEI {{icon:arrow-right:icon-arrow}}</button><a class="btn btn-ghost btn-lg" href="{{P}}oportunidades/">Ver oportunidades</a></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,108 @@
+<!--META {"title": "Infraestrutura", "description": "O prédio do CEI/UFMG no Campus Pampulha: cerca de 1.000 m² com Espaço Maker (FabLab), coworkings, sala multimeios, laboratório de pesquisa e espaço de convivência."} -->
+
+<section class="page-hero" aria-labelledby="if-title">
+  <div class="page-hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{P}}">Início</a></li><li><a href="{{P}}ecossistema/">Ecossistema</a></li><li aria-current="page">Infraestrutura</li></ol>
+    <p class="eyebrow">Infraestrutura</p>
+    <h1 id="if-title">Um prédio desenhado para a convivência entre iniciativas.</h1>
+    <p class="lead">O CEI será instalado no prédio do CPDEE/INOVA, no Campus Pampulha: aproximadamente 1.000 m² em dois andares, reconfigurados para reunir spin-offs, empresas juniores, projetos de extensão, programas acadêmicos e inovação aberta.</p>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0" aria-labelledby="pl-title">
+  <div class="container">
+    <div class="section-head-row">
+      <div class="section-head"><h2 id="pl-title" style="font-size:clamp(1.5rem,1.2rem + 1.2vw,2.2rem)">Distribuição dos espaços</h2></div>
+      <div class="tabs-list" role="tablist" aria-label="Andares">
+        <button type="button" class="tab" role="tab" id="tab-a1" aria-controls="panel-a1" aria-selected="true">1º andar</button>
+        <button type="button" class="tab" role="tab" id="tab-a2" aria-controls="panel-a2" aria-selected="false" tabindex="-1">2º andar</button>
+      </div>
+    </div>
+
+    <div id="panel-a1" role="tabpanel" aria-labelledby="tab-a1" class="split is-reverse" data-detail-group style="margin-top:0">
+      <div class="floor">
+        <div class="floor-plan">
+          <button type="button" class="room room-wide" data-detail="rm-maker" aria-pressed="true"><span class="r-code">1.01</span><span class="r-name">Espaço Maker · Laboratório de Prototipagem Rápida</span></button>
+          <button type="button" class="room" data-detail="rm-cowej" aria-pressed="false"><span class="r-code">1.02</span><span class="r-name">Coworking Empresas Juniores</span></button>
+          <button type="button" class="room" data-detail="rm-multi" aria-pressed="false"><span class="r-code">1.03</span><span class="r-name">Sala Multimeios</span></button>
+          <button type="button" class="room" data-detail="rm-leat" aria-pressed="false"><span class="r-code">1.04</span><span class="r-name">LEAT · Laboratório de Pesquisa e Inovação</span></button>
+        </div>
+        <p class="small muted" style="margin:14px 0 0">Representação esquemática — a planta arquitetônica está em elaboração.</p>
+      </div>
+      <div class="panel-light" data-detail-panel aria-live="polite"></div>
+      <template id="rm-maker"><div class="diag-label">1º andar · 1.01</div><h3 style="font-size:1.6rem;margin-bottom:10px">Espaço Maker</h3><p class="muted">Ambiente técnico equipado com tecnologias modernas para criação e desenvolvimento de protótipos — o coração do processo de materialização de ideias, do design inicial à modelagem física.</p><ul class="dot-list" style="margin:16px 0 20px"><li>Acesso aberto e colaborativo</li><li>Mais de R$ 1 milhão em equipamentos</li><li>Referência em prototipagem na UFMG</li></ul><button type="button" class="btn btn-dark btn-sm" data-interest="Uso do Espaço Maker" data-interest-kind="Solicitar uso do espaço">Solicitar uso</button></template>
+      <template id="rm-cowej"><div class="diag-label">1º andar · 1.02</div><h3 style="font-size:1.6rem;margin-bottom:10px">Coworking Empresas Juniores</h3><p class="muted">Espaço colaborativo destinado ao desenvolvimento de atividades administrativas, projetos e parcerias, fomentando a troca de experiências entre grupos de diferentes cursos e áreas de atuação.</p><button type="button" class="btn btn-dark btn-sm" data-interest="Coworking Empresas Juniores" data-interest-kind="Solicitar uso do espaço">Solicitar uso</button></template>
+      <template id="rm-multi"><div class="diag-label">1º andar · 1.03</div><h3 style="font-size:1.6rem;margin-bottom:10px">Sala Multimeios</h3><p class="muted">Estrutura versátil para palestras, oficinas, treinamentos, mentorias, exposições e reuniões com empresas e stakeholders externos.</p><ul class="dot-list" style="margin:16px 0 20px"><li>Lousas interativas</li><li>Câmeras 360º e microfones para documentação e transmissão</li></ul><button type="button" class="btn btn-dark btn-sm" data-interest="Reserva da Sala Multimeios" data-interest-kind="Solicitar uso do espaço">Solicitar uso</button></template>
+      <template id="rm-leat"><div class="diag-label">1º andar · 1.04</div><h3 style="font-size:1.6rem;margin-bottom:10px">LEAT</h3><p class="muted">Laboratório de Pesquisa e Inovação integrado ao prédio do CEI.</p><p><span class="placeholder-note">[CONTEÚDO INSTITUCIONAL A INSERIR: linhas de atuação do LEAT]</span></p></template>
+    </div>
+
+    <div id="panel-a2" role="tabpanel" aria-labelledby="tab-a2" class="split is-reverse" data-detail-group hidden>
+      <div class="floor">
+        <div class="floor-plan">
+          <button type="button" class="room room-wide" data-detail="rm-cowext" aria-pressed="true"><span class="r-code">2.01</span><span class="r-name">Coworking Projetos de Extensão</span></button>
+          <button type="button" class="room" data-detail="rm-cowinc" aria-pressed="false"><span class="r-code">2.02</span><span class="r-name">Coworking Empresas Incubadas (InovaLab)</span></button>
+          <button type="button" class="room" data-detail="rm-conv" aria-pressed="false"><span class="r-code">2.03</span><span class="r-name">Convivência e Networking</span></button>
+          <button type="button" class="room" data-detail="rm-adm" aria-pressed="false"><span class="r-code">2.04</span><span class="r-name">Administração do CEI · INOVA</span></button>
+        </div>
+        <p class="small muted" style="margin:14px 0 0">Representação esquemática — a planta arquitetônica está em elaboração.</p>
+      </div>
+      <div class="panel-light" data-detail-panel aria-live="polite"></div>
+      <template id="rm-cowext"><div class="diag-label">2º andar · 2.01</div><h3 style="font-size:1.6rem;margin-bottom:10px">Coworking Projetos de Extensão</h3><p class="muted">Espaço dedicado à integração de grupos como OPEI, INDERIOS, ENACTUS, LAPLANGE, UFMG Hub, ENG200 e outras iniciativas voltadas ao empreendedorismo e à inovação.</p><button type="button" class="btn btn-dark btn-sm" data-interest="Coworking Projetos de Extensão" data-interest-kind="Solicitar uso do espaço">Solicitar uso</button></template>
+      <template id="rm-cowinc"><div class="diag-label">2º andar · 2.02</div><h3 style="font-size:1.6rem;margin-bottom:10px">Coworking Empresas Incubadas</h3><p class="muted">Ambiente que acolherá startups e spin-offs acadêmicas do InovaLab, com estrutura para reuniões, mentorias, gestão de projetos e interação com a incubadora da UFMG.</p><a class="link-arrow" href="{{P}}programas/#programa-inovalab"><span>Sobre o InovaLab</span>{{icon:arrow-right}}</a></template>
+      <template id="rm-conv"><div class="diag-label">2º andar · 2.03</div><h3 style="font-size:1.6rem;margin-bottom:10px">Espaço de Convivência e Networking</h3><p class="muted">Área aberta de integração, planejada para estimular o diálogo informal, a troca de ideias e a construção de redes de colaboração entre os usuários do CEI.</p></template>
+      <template id="rm-adm"><div class="diag-label">2º andar · 2.04</div><h3 style="font-size:1.6rem;margin-bottom:10px">Administração do CEI</h3><p class="muted">Espaço ocupado pelo time da INOVA, responsável pela gestão operacional do centro.</p><a class="link-arrow" href="{{P}}contato/"><span>Falar com a administração</span>{{icon:arrow-right}}</a></template>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" aria-labelledby="eq-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Destaque · FabLab/CEI</p>
+      <h2 id="eq-title">Mais de R$ 1 milhão em equipamentos para prototipagem.</h2>
+      <p>Equipamentos já adquiridos pela Escola de Engenharia, por meio de convênio com o Governo do Estado de Minas Gerais.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><span class="card-icon">{{icon:box}}</span><h3>Impressoras 3D de alta precisão</h3><p>Produção de peças complexas.</p></div>
+      <div class="card reveal" data-delay="1"><span class="card-icon">{{icon:search}}</span><h3>Scanners 3D</h3><p>Digitalização de objetos e integração com softwares de modelagem.</p></div>
+      <div class="card reveal" data-delay="2"><span class="card-icon">{{icon:wrench}}</span><h3>Fresadoras CNC e corte a laser</h3><p>Fabricação de componentes com acabamento técnico e precisão industrial.</p></div>
+      <div class="card reveal"><span class="card-icon">{{icon:layers}}</span><h3>Plotter de recorte e termoformagem</h3><p>Experimentações com papel, vinil, acrílico e tecido; termoformagem a vácuo.</p></div>
+      <div class="card reveal" data-delay="1"><span class="card-icon">{{icon:monitor}}</span><h3>Estações de alto desempenho</h3><p>Softwares de CAD, CAM e simulação.</p></div>
+      <div class="card reveal" data-delay="2"><span class="card-icon">{{icon:cpu}}</span><h3>Ferramentas e eletrônica</h3><p>Serras, parafusadeiras e kits de prototipagem eletrônica.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="cn-title">
+  <div class="container split is-even">
+    <div>
+      <p class="eyebrow">Recursos tecnológicos</p>
+      <h2 id="cn-title">Conectividade e mobiliário para múltiplos projetos ao mesmo tempo.</h2>
+    </div>
+    <ul class="check-list is-yes">
+      <li>{{icon:wifi}}<span><strong>Internet de alta velocidade</strong> com cabeamento estruturado e Wi-Fi de alta capacidade em todos os ambientes.</span></li>
+      <li>{{icon:monitor}}<span><strong>Recursos audiovisuais</strong> em todas as salas para apresentação de ideias e registros de processo.</span></li>
+      <li>{{icon:layers}}<span><strong>Mobiliário modular:</strong> bancadas de trabalho, estações individuais, armários, cadeiras ergonômicas e espaços adaptáveis.</span></li>
+      <li>{{icon:users}}<span><strong>Suporte institucional:</strong> gestão compartilhada entre Escola de Engenharia e CTIT/INOVA, integrada ao UFMG Hub e ao ELO.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-surface" aria-labelledby="ob-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Meta 5 · Espaço físico</p>
+      <h2 id="ob-title">Etapas previstas para a estruturação do prédio.</h2>
+      <p>Cronograma do plano de trabalho, contado a partir do início do projeto (out/2025).</p>
+    </div>
+    <ol class="chain">
+      <li><span class="ci">5.1</span><div><strong>Contratação do projeto arquitetônico e elétrico</strong><span>Meses 1–4 · edital e contratação da empresa projetista</span></div></li>
+      <li><span class="ci">5.2</span><div><strong>Elaboração do projeto</strong><span>Meses 5–8 · projeto arquitetônico, elétrico e lista de mobiliário</span></div></li>
+      <li><span class="ci">5.3</span><div><strong>Contratação da execução</strong><span>Meses 9–12 · edital e contrato da empresa executora</span></div></li>
+      <li><span class="ci">5.4</span><div><strong>Execução e acompanhamento</strong><span>Meses 13–18 · relatório de execução com registros em imagens</span></div></li>
+      <li class="is-human"><span class="ci">5.5</span><div><strong>Inauguração dos novos espaços</strong><span>Meses 13–18 · evento de inauguração</span></div></li>
+    </ol>
+    <div class="cluster" style="margin-top:32px"><a class="btn" href="{{P}}dados/#cronograma">Ver cronograma completo</a><button type="button" class="btn btn-dark" data-interest="Inauguração dos novos espaços do CEI" data-interest-kind="Quero ser avisado">Avise-me da inauguração {{icon:bell:icon-sm}}</button></div>
+  </div>
+</section>
